@@ -2,6 +2,14 @@ body {
     font-size: 10px;
 }
 
+a[href] {
+    /* style declaration */
+    text-decoration: none;
+}
+
+ul {
+    font-size: 50px;
+}
 
 .thumbnail-title {
     display: block;
@@ -12,7 +20,4 @@ body {
     color: rgb(202, 238, 255);
 
     font-size: 18px;
-
-
-
 }
