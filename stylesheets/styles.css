@@ -1,62 +1,96 @@
+@font-face {
+    font-family: 'lakeshore';
+    src: url('./fonts/Airstream-webfont.eot');
+    src: url('./fonts/LAKESHOR-webfont.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/LAKESHOR-webfont.woff') format('woff'),
+        url('./fonts/LAKESHOR-webfont.ttf') format('truetype'),
+        url('./fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'airstreamregular';
+    src: url('./fonts/Airstream-webfont.eot');
+    src: url('./fonts/Airstream-webfont.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Airstream-webfont.woff') format('woff'),
+        url('./fonts/Airstream-webfont.ttf') format('truetype'),
+        url('./fonts/Airstream-webfont.svg#airstreamregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
 body {
-    font-size: 10px;
-    background: rgb(149, 194, 215);
-}
-
-a {
-    /* removes text decorations */
-    text-decoration: none;
-}
-
-/* .thumbNailList + .thumbNailImages{
-
-} */
-
-.li {
-    background-color: red;
+    height: 100%;
 }
 
 .logoText {
-    background-color: aliceblue;
-
+    background: fixed;
+    background-color: white;
     text-align: center;
     text-transform: uppercase;
     font-size: 37px;
-    /* added for flare */
-    font-family: 'Courier New', Courier, monospace;
+    font-family: lakeshore;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    background-color: rgb(149, 194, 215);
+}
+
+.thumbnail-item+.thumbnail-item {
+    margin-top: 20px;
 }
 
 
+.thumbnail-item {
+    display: inline-block;
+    width: 120px;
+    border: 1px solid rgb(100%, 100%, 100%);
+    border: 1px solid rgba(100%, 100%, 100%, 0.8);
+}
+
+
+.thumbnail-image {
+    display: block;
+    width: 100%;
+}
+
+
+
+/* span tag name  */
 .thumbnail-title {
     display: block;
     margin: 0;
     padding: 4px 10px;
-
     background: rgb(96, 125, 139);
     color: rgb(202, 238, 255);
 
     font-size: 18px;
 }
 
+.thumbNailList-list {
+    list-style: none;
+    padding: 0%;
+}
 
 .detail-image {
     width: 90%;
 }
 
-
-
-.thumbNailList {
+.thumbNail-list {
     list-style: none;
     padding: 0%;
-}
 
+    /* nowrap prevents wrapping */
+    white-space: nowrap;
+    /* tells browser to add a scrollbar along horiizontal space */
+    overflow-x: auto;
 
-/* Images */
-.thumbNailImages {
-    /* display: block; */
-    display: inline-block;
-    width: 120px;
-    border: 5px solid rgb(12, 12, 186);
-    border: 5px solid rgba(100%, 100%, 100%, 0.8);
-    /* width: 100%; */
 }
