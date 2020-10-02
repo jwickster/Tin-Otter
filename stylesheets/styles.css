@@ -41,6 +41,7 @@ a {
 
 body {
     display: flex;
+    flex-direction: column;
     background-color: rgb(149, 194, 215);
 }
 
